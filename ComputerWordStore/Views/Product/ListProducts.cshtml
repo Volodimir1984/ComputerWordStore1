@@ -1,0 +1,242 @@
+﻿@using ComputerWordStore.Models.Products
+@model PaginationModel
+
+@{
+    Layout = "_Layout";
+	ViewData["Title"] = "Купити " + ViewData["category_name"] + " " + ViewData["brand_name"];
+}
+
+@functions
+{
+    string GetCheck(string brandName)
+    {
+        if (ViewData["brand_name"].Equals(brandName))
+        {
+            return "check";
+        }
+
+        return "";
+    }
+}
+
+<div class="container">
+    <header class="page-header">
+        <h1 class="page-title">@ViewData["category_name"]</h1>
+        
+        @* breadcrumb *@
+        
+        <ol class="breadcrumb page-breadcrumb">
+            <li>
+                <a href="/"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="active">
+                <a href="~/@ViewData["category_slug"]">@ViewData["category_name"]</a>
+            </li>
+        </ol>
+
+        <ul class="category-selections clearfix">
+            
+            @* sort *@
+            
+            <li><span class="category-selections-sign">Сортувати за :</span>
+                <count-products-or-sort parameters="@Model.SortingParameters"
+                                        class-select="category-selections-select"
+                                        on-change="window.location.href=this.options[this.selectedIndex].value"
+                                        page-action="@ViewData["href"]@Model.PageModel.PageNumber"
+                                        values-link="@ViewBag.ValuesLink"
+                                        parameter="sort"></count-products-or-sort>
+             </li>     
+            
+            @* form for selecting count products on the page *@
+
+            <li>
+                <span class="category-selections-sign">Кількість:</span>
+                <count-products-or-sort page-action="@ViewData["href"]@Model.PageModel.PageNumber"
+                                        parameter="countProductPage"
+                                        class-select="category-selections-select"
+                                        on-change="window.location.href=this.options[this.selectedIndex].value"
+                                        parameters="@Model.CountProductOnPage"
+                                        values-link="@ViewBag.ValuesLink">
+                </count-products-or-sort>
+            </li>
+        </ul>
+    </header>
+    
+    @* filters *@
+    
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="category-filters">
+                
+                @* filter by price *@
+                
+                <div class="category-filters-section">
+                    <h3 class="widget-title-sm">Ціна</h3>
+                    <input type="text" id="price-slider" price-min="@ViewData["priceMin"]" 
+                           price-max="@ViewData["priceMax"]" 
+                           start-price-min="@ViewData["startPriceMin"]"
+                           start-price-max="@ViewData["startPriceMax"]"
+                           link="@ViewData["href"]@Model.PageModel.PageNumber@ViewBag.ValuesLink" />
+                </div>
+                
+                @* filter by brands *@
+                
+                <div class="category-filters-section">
+                        <h3 class="widget-title-sm">Бренди</h3>
+                        @foreach (Brand brand in ViewBag.Brands as List<Brand> ?? new List<Brand>())
+                        {
+                            <div class="checkbox" is-checked="@GetCheck(brand.Name)">
+                                <label>
+                                    <input class="i-check" type="checkbox" />
+                                    @brand.Name
+                                    <span class="category-filters-amount">
+                                        (@(brand.Products
+                                             .Count(i => 
+                                                 i.Category.Name == (string)ViewData["category_name"])))
+                                    </span>    
+                                </label>
+                            </div>
+                        }
+                </div>
+
+                <div class="category-filters-section">
+                    <h3 class="widget-title-sm">Discount</h3>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>
+                            10% Off or More
+                            <span class="category-filters-amount">(78)</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>
+                            25% Off or More
+                            <span class="category-filters-amount">(26)</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>
+                            50% Off or More
+                            <span class="category-filters-amount">(37)</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>
+                            75% Off or More
+                            <span class="category-filters-amount">(89)</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="category-filters-section">
+                    <h3 class="widget-title-sm">Features</h3>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>New<span class="category-filters-amount">(75)</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>Featured<span class="category-filters-amount">(27)</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input class="i-check" type="checkbox"/>On Sale<span class="category-filters-amount">(32)</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        @* list of products *@
+        
+        <div class="col-md-9">
+            <div class="row" data-gutter="15">
+                @foreach (Product product in Model.Products)
+                {
+                    <div class="col-md-3">
+                        <div class="product ">
+                            <ul class="product-labels">
+                                @if (product.Discount > 0)
+                                {
+                                    <li>-@product.Discount%</li>
+                                }
+                            </ul>
+                            <div class="product-img-wrap">
+                                @{
+                                    string photo = product.ProductImageses.FirstOrDefault()?.Image;
+                                    string photoLink = "images/" + photo;
+                                    string photoProduct = photo != null ? photoLink : "static/no_photo.jpg";
+                                }
+                                <img class="product-img-primary" src="~/@photoProduct"
+                                     alt="@product.Name" title="@product.Name"/>
+                                @{
+                                    string photo1 = product.ProductImageses.Skip(1).Take(1).FirstOrDefault()?.Image;
+                                    string photoLink1 = "images/" + photo1;
+                                    string photoProduct1 = photo1 != null ? photoLink1 : "static/no_photo.jpg";
+                                }
+                                <img class="product-img-alt" src="~/@photoProduct1"
+                                     alt="@product.Name" title="@product.Name"/>
+                            </div>
+                            <a class="product-link" href="~/@product.Category.Slug/@product.Brand.Slug/@product.Slug">
+                            </a>
+                            <div class="product-caption">
+                                <ul class="product-caption-rating">
+                                    <li class="rated"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="rated"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="rated"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="rated"><i class="fa fa-star"></i>
+                                    </li>
+                                    <li class="rated"><i class="fa fa-star"></i>
+                                    </li>
+                                </ul>
+                                <h5 class="product-caption-title">@product.Name</h5>
+                                <div class="product-caption-price">
+                                    @if (product.Discount == 0)
+                                    {
+                                        <span class="product-caption-price-new">@product.Price .грн</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="product-caption-price-old">@product.Price</span>
+                                        <span class="product-caption-price-new">
+                                            @product.Price - (@product.Discount / 100 * @product.Price)
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="row">
+                
+                @* count of products *@
+                
+                <div class="col-md-3">
+                    <p class="category-pagination-sign">Показано @Model.Products.Count() з @ViewData["count"]</p>
+                </div>
+                
+                @* pagination *@
+                
+                <div class="col-md-9">
+                    <pagination page-model="@Model.PageModel" page-link="@ViewData["href"]"
+                                list-class="pagination category-pagination pull-right"
+                                div-next-page-class="last"
+                                previous-page-class="fa fa-long-arrow-left"
+                                next-page-class="fa fa-long-arrow-right"
+                                active-page-class="active"
+                                values-link="@ViewBag.ValuesLink"></pagination>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

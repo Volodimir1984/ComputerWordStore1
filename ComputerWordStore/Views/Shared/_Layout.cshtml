@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap.css" >
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400italic,400' 
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="~/css/font-awesome.css">
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+
+<body>
+<div class="global-wrapper clearfix" id="global-wrapper">
+
+    @* menu block about website *@
+
+    <div class="navbar-before mobile-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="navbar-before-sign">Everything You Need is theBox</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav navbar-nav navbar-right navbar-right-no-mar">
+                        <li><a href="#">About Us</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="#">Contact Us</a>
+                        </li>
+                        <li><a href="#">FAQ</a>
+                        </li>
+                        <li><a href="#">Wishlist</a>
+                        </li>
+                        <li><a href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* website login form *@
+
+    <div class="mfp-with-anim mfp-hide mfp-dialog clearfix" id="nav-login-dialog">
+        <h3 class="widget-title">Member Login</h3>
+        <p>Welcome back, friend. Login to get started</p>
+        <hr/>
+        <form>
+            <div class="form-group">
+                <label>Email or Username</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input class="i-check" type="checkbox"/>
+                    Remeber Me</label>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Sign In"/>
+        </form>
+        <div class="gap gap-small"></div>
+        <ul class="list-inline">
+            <li>
+                <a href="#nav-account-dialog" class="popup-text">Not Member Yet</a>
+            </li>
+            <li>
+                <a href="#nav-pwd-dialog" class="popup-text">Forgot Password?</a>
+            </li>
+        </ul>
+    </div>
+
+    @* form to register on the website *@
+
+    <div class="mfp-with-anim mfp-hide mfp-dialog clearfix" id="nav-account-dialog">
+        <h3 class="widget-title">Create TheBox Account</h3>
+        <p>Ready to get best offers? Let's get started!</p>
+        <hr/>
+        <form>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="form-group">
+                
+                <label>Password</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="form-group">
+                
+                <label>Repeat Password</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input class="i-check" type="checkbox"/>
+                    Subscribe to the Newsletter
+                </label>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Create Account"/>
+        </form>
+        <div class="gap gap-small"></div>
+        <ul class="list-inline">
+            <li>
+                <a href="#nav-login-dialog" class="popup-text">Already Memeber</a>
+            </li>
+        </ul>
+    </div>
+
+    @* form to password recovery *@
+
+    <div class="mfp-with-anim mfp-hide mfp-dialog clearfix" id="nav-pwd-dialog">
+        <h3 class="widget-title">Password Recovery</h3>
+        <p>Enter Your Email and We Will Send the Instructions</p>
+        <hr/>
+        <form>
+            <div class="form-group">
+                <label>Your Email</label>
+                <input class="form-control" type="text"/>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Recover Password"/>
+        </form>
+    </div>
+
+    @* block menu for the website *@
+    @* if render Index page then loaded IndexMenu *@
+
+    @if (IsSectionDefined("IndexMenu"))
+    {
+        @RenderSection("IndexMenu")
+    }
+    else
+    {
+        <nav class="navbar navbar-inverse navbar-main yamm">
+            <div class="container">
+                
+                @* logo *@
+                
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button"
+                            data-toggle="collapse" data-target="#main-nav-collapse" area_expanded="false">
+                        <span class="sr-only">Main Menu</span><span class="icon-bar"></span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <p>CompWord</p>
+                    </a>
+                </div>
+                
+                @* menu *@
+                
+                <div class="collapse navbar-collapse" id="main-nav-collapse">
+                    
+                    @* form to search products *@
+                    
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                        <a href="#">
+                            <i class="fa fa-reorder"></i>&nbsp;
+                            Категорії
+                            <i class="drop-caret" data-toggle="dropdown"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-category">
+                            <vc:list-categories/>
+                        </ul>
+                    </ul>
+                    <form class="navbar-form navbar-left navbar-main-search" role="search">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Search the Entire Store..."/>
+                        </div>
+                        <a class="fa fa-search navbar-main-search-submit" href="#"></a>
+                    </form>
+                    
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#nav-login-dialog" data-effect="mfp-move-from-top" class="popup-text">Sign In</a>
+                        </li>
+                        <li><a href="#nav-account-dialog" data-effect="mfp-move-from-top" class="popup-text">Create Account</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="fa fa-shopping-cart" href="shopping-cart.html"></a>
+                            <ul class="dropdown-menu dropdown-menu-shipping-cart">
+                                <li>
+                                    <a class="dropdown-menu-shipping-cart-img" href="#">
+                                        <img src="img/100x100.png" alt="Image Alternative text" title="Image Title"/>
+                                    </a>
+                                    <div class="dropdown-menu-shipping-cart-inner">
+                                        <p class="dropdown-menu-shipping-cart-price">$58</p>
+                                        <p class="dropdown-menu-shipping-cart-item"><a href="#">Gucci Patent Leather Open Toe Platform</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-menu-shipping-cart-img" href="#">
+                                        <img src="img/100x100.png" alt="Image Alternative text" title="Image Title"/>
+                                    </a>
+                                    <div class="dropdown-menu-shipping-cart-inner">
+                                        <p class="dropdown-menu-shipping-cart-price">$51</p>
+                                        <p class="dropdown-menu-shipping-cart-item"><a href="#">Nikon D5200 24.1 MP Digital SLR Camera</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-menu-shipping-cart-img" href="#">
+                                        <img src="img/100x100.png" alt="Image Alternative text" title="Image Title"/>
+                                    </a>
+                                    <div class="dropdown-menu-shipping-cart-inner">
+                                        <p class="dropdown-menu-shipping-cart-price">$61</p>
+                                        <p class="dropdown-menu-shipping-cart-item"><a href="#">Apple 11.6" MacBook Air Notebook </a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-menu-shipping-cart-img" href="#">
+                                        <img src="img/100x100.png" alt="Image Alternative text" title="Image Title"/>
+                                    </a>
+                                    <div class="dropdown-menu-shipping-cart-inner">
+                                        <p class="dropdown-menu-shipping-cart-price">$99</p>
+                                        <p class="dropdown-menu-shipping-cart-item"><a href="#">Fossil Women's Original Boyfriend</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="dropdown-menu-shipping-cart-total">Total: $150</p>
+                                    <button class="dropdown-menu-shipping-cart-checkout btn btn-primary">Checkout</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    }
+
+@RenderBody()
+
+<div class="gap">
+
+</div>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row row-col-gap" data-gutter="60">
+            <div class="col-md-3">
+                <h4 class="widget-title-sm">TheBox Shop</h4>
+                <p>Ullamcorper scelerisque elit quam dignissim velit
+                    lacus urna quam interdum quisque bibendum</p>
+                <ul class="main-footer-social-list">
+                    <li>
+                        <a class="fa fa-facebook" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-twitter" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-pinterest" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-instagram" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-google-plus" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="widget-title-sm">Popular Tags</h4>
+                <ul class="main-footer-tag-list">
+                    <li><a href="#">New Season</a>
+                    </li>
+                    <li><a href="#">Watches</a>
+                    </li>
+                    <li><a href="#">woman</a>
+                    </li>
+                    <li><a href="#">classic</a>
+                    </li>
+                    <li><a href="#">modern</a>
+                    </li>
+                    <li><a href="#">blue</a>
+                    </li>
+                    <li><a href="#">shoes</a>
+                    </li>
+                    <li><a href="#">running</a>
+                    </li>
+                    <li><a href="#">jeans</a>
+                    </li>
+                    <li><a href="#">sports</a>
+                    </li>
+                    <li><a href="#">laptops</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="widget-title-sm">Newsletter</h4>
+                <form>
+                    <div class="form-group">
+                        <label>Sign up to the newsletter</label>
+                        <input class="newsletter-input form-control"
+                               placeholder="Your e-mail address" type="text"/>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Sign up"/>
+                </form>
+            </div>
+        </div>
+        <ul class="main-footer-links-list">
+            <li><a href="#">About Us</a>
+            </li>
+            <li><a href="#">Jobs</a>
+            </li>
+            <li><a href="#">Legal</a>
+            </li>
+            <li><a href="#">Support & Customer Service</a>
+            </li>
+            <li><a href="#">Blog</a>
+            </li>
+            <li><a href="#">Privacy</a>
+            </li>
+            <li><a href="#">Terms</a>
+            </li>
+            <li><a href="#">Press</a>
+            </li>
+            <li><a href="#">Shipping</a>
+            </li>
+            <li><a href="#">Payments & Refunds</a>
+            </li>
+        </ul>
+        <img class="main-footer-img" src="img/test_footer2-i.png"
+             alt="Image Alternative text" title="Image Title"/>
+    </div>
+
+</footer>
+<div class="copyright-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copyright-text">Copyright &copy; <a href="#">TheBox</a> 2014. Designed my remtsoy. All rights reseved</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="payment-icons-list">
+                    <li>
+                        <img src="~/static/visa-straight-32px.png"
+                             alt="Image Alternative text" title="Pay with Visa"/>
+                    </li>
+                    <li>
+                        <img src="~/static/mastercard-straight-32px.png"
+                             alt="Image Alternative text" title="Pay with Mastercard"/>
+                    </li>
+                    <li>
+                        <img src="~/static/paypal-straight-32px.png"
+                             alt="Image Alternative text" title="Pay with Paypal"/>
+                    </li>
+                    <li>
+                        <img src="~/static/visa-electron-straight-32px.png"
+                             alt="Image Alternative text" title="Pay with Visa-electron"/>
+                    </li>
+                    <li>
+                        <img src="~/static/maestro-straight-32px.png"
+                             alt="Image Alternative text" title="Pay with Maestro"/>
+                    </li>
+                    <li>
+                        <img src="~/static/discover-straight-32px.png"
+                             alt="Image Alternative text" title="Pay with Discover"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    <script src="~/lib/jquery.js"></script>
+    <script src="~/lib/bootstrap.js"></script>
+    <script src="~/js/icheck.js"></script>
+    <script src="~/js/ionrangeslider.js"></script>
+    <script src="~/js/jqzoom.js"></script>
+    <script src="~/js/card-payment.js"></script>
+    <script src="~/js/owl-carousel.js"></script>
+    <script src="~/js/magnific.js"></script>
+    <script src="~/js/custom.js"></script>
+</body>
+</html>

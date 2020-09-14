@@ -1,0 +1,32 @@
+﻿@using ComputerWordStore.Models.Products
+@model IList<Category>
+
+
+@foreach (Category category in Model)
+{
+    <li>
+        <a href="~/@category.Slug/">@category.Name</a>
+        <div class="dropdown-menu-category-section">
+            <div class="dropdown-menu-category-section-inner">
+                <div class="dropdown-menu-category-section-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="dropdown-menu-category-list">
+                                @foreach (BrandCategory brand in category.BrandCategories)
+                                {
+                                    <li>
+                                        <a href="~/@category.Slug/@brand.Brand.Slug">@brand.Brand.Name</a>
+                                    </li>
+                                }
+                                <li>
+                                    <a href="~/@category.Slug">Усі</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+}
+  
