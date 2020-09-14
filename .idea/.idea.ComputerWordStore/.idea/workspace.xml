@@ -4,156 +4,7 @@
     <projectFile>ComputerWordStore/ComputerWordStore.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0680092d-6ffa-4aaf-8263-15b0dabcb477" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources/281a209a-0629-4abe-91b2-a4e69ef178b7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources/281a209a-0629-4abe-91b2-a4e69ef178b7/storage_v2/_src_/database/computers_world.S3njhQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources/281a209a-0629-4abe-91b2-a4e69ef178b7/storage_v2/_src_/database/computers_world.S3njhQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources/281a209a-0629-4abe-91b2-a4e69ef178b7/storage_v2/_src_/database/computers_world.S3njhQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/dataSources/281a209a-0629-4abe-91b2-a4e69ef178b7/storage_v2/_src_/database/computers_world.S3njhQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ComputerWordStore/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Components/ListCategories.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/ComputerWordStore.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Controllers/ProductController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/PageModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/PaginationModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/Products/Brand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/Products/BrandCategory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/Products/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/Products/ComputersWorldContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/Products/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Models/Products/ProductImages.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/TagHelpers/CountProductsOrSortTagHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/TagHelpers/PaginationTagHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Product/ErrorPage.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Product/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Product/ListProducts.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Product/Product.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Shared/Components/ListCategories/Default.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.Views.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.Views.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/ComputerWordStore.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/ComputerWordStore.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/ComputerWordStore.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/ComputerWordStore.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.RazorAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.RazorAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.RazorCoreGenerate.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.RazorTargetAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.RazorTargetAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.TagHelpers.input.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.TagHelpers.output.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.Views.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.Views.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/ComputerWordStore.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Product/ErrorPage.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Product/Index.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Product/ListProducts.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Product/Product.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/ListCategories/Default.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/staticwebassets/ComputerWordStore.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/Debug/netcoreapp3.1/staticwebassets/ComputerWordStore.StaticWebAssets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/card-payment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/icheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/ionrangeslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/jqzoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/magnific.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/js/owl-carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/american-express-curved-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/discover-curved-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/discover-straight-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/header_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/maestro-curved-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/maestro-straight-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/mastercard-curved-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/mastercard-straight-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/nature.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/no_photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/paypal-straight-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/visa-curved-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/visa-electron-straight-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComputerWordStore/wwwroot/static/visa-straight-32px.png" afterDir="false" />
-    </list>
+    <list default="true" id="0680092d-6ffa-4aaf-8263-15b0dabcb477" name="Default Changelist" comment="New Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -335,8 +186,16 @@
       <workItem from="1599980751839" duration="7633000" />
       <workItem from="1600017725071" duration="160000" />
       <workItem from="1600017921847" duration="7755000" />
-      <workItem from="1600082396435" duration="16765000" />
+      <workItem from="1600082396435" duration="17164000" />
     </task>
+    <task id="LOCAL-00001" summary="New Project">
+      <created>1600107366525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600107366525</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +205,8 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="New Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="188" key="#Notifications" timestamp="1600106142133">
@@ -360,10 +221,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1598432624797" />
-    <state x="533" y="260" key="Github.ShareDialog" timestamp="1600105954190">
+    <state x="533" y="260" key="Github.ShareDialog" timestamp="1600107574960">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="533" y="260" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1600105954190" />
+    <state x="533" y="260" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1600107574960" />
     <state x="393" y="69" key="Github.UntrackedFilesDialog" timestamp="1600106105027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -468,10 +329,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1600091135693" />
-    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600107177139">
+    <state x="447" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600107444880">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1600107177139" />
+    <state x="447" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728@0.0.1366.728" timestamp="1600107444880" />
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600107429765">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1600107429765" />
     <state x="451" y="297" width="672" height="678" key="search.everywhere.popup" timestamp="1599915668950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
