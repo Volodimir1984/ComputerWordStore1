@@ -108,6 +108,7 @@ namespace ComputerWordStore.Controllers
         [Route("error/")]
         public IActionResult ErrorPage()
         {
+            string hello = "Hello World";
             return View();
         }
         
